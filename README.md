@@ -1,6 +1,6 @@
 # Desenvolvimento Ágil - Modelo de Projeto
 
-## Tema: *Sistema de Controle Financeira Pessoal*
+## Tema: *Sistema de Controle Financeiro Pessoal*
 
 ---
 
