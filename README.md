@@ -2,6 +2,7 @@
 
 ## Tema: *Sistema de Controle Financeiro Pessoal*
 
+### Participantes: Ana Carolina Fanhani Stralioti, Gustavo do Prado Lima e Jairson Steinert
 ---
 
 ## 1. Problema/Objetivo
