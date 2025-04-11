@@ -32,8 +32,8 @@
 
 | Requisito                                   | Prioridade |
 |---------------------------------------------|------------|
-| Cadastrar Usuário                           | Must       |
-| Login Usuário                               | Must       |
+| Cadastrar usuário                           | Must       |
+| Login usuário                               | Must       |
 | Criptografar dados                          | Must       |
 | Cadastrar contas a pagar                    | Must       |
 | Cadastrar contas a receber                  | Must       |
@@ -46,3 +46,36 @@
 | Gerar interface intuitiva                   | Should     |
 
 ---
+
+## 4. Definição do MVP (Produto Mínimo Viável)    
+
+- Cadastrar usuário
+- Login usuário
+- Criptografar dados
+- Cadastrar contas a pagar
+- Cadastrar contas a receber
+- Cadastrar favorecidos
+- Vincular favorecidos
+- Categorizar contas
+
+---    
+
+## 5. Organização das Entregas por Sprint    
+    
+### Sprint 1    
+
+- Cadastrar usuário
+- Login usuário
+- Cadastrar contas a pagar   
+
+### Sprint 2    
+
+- Cadastrar contas a receber
+- Cadastrar favorecidos 
+
+### Sprint 3    
+
+- Vincular favorecidos   
+- Categorizar contas  
+
+---    
