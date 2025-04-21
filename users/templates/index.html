@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'body' %}
+
+<div class="min-h-screen bg-blue-800">
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold mb-4 text-white">Bem-vindo(a) ao seu Controle Financeiro</h1>
+        
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <p class="mb-4">Aqui você pode gerenciar suas finanças de forma eficiente. 😎</p>
+            
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-4 md:mb-0 md:w-1/2">
+                    <p class="text-gray-700">
+                        Em breve você poderá:
+                    </p>
+                    <ul class="list-disc list-inside mt-2 text-gray-700">
+                        <li>Visualizar suas finanças</li>
+                        <li>Adicionar receitas</li>
+                        <li>Acompanhar seu orçamento</li>
+                        <li>Gerar relatórios financeiros</li>
+                    </ul>
+                    <br>
+                    <p class="text-gray-700">
+                        Enquanto isso, você já pode:
+                    </p>
+                    <ul class="list-disc list-inside mt-2 text-gray-700">
+                        <li><a href="{% url 'contasPagar' %}" class="font-semibold text-indigo-600 hover:text-indigo-500">Adicionar despesas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="{% static 'images/doguinho.jpg' %}" alt="Imagem de finanças" class="rounded-lg shadow-md max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock 'body' %}

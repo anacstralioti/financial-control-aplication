@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block 'body' %}
+
+<div class="p-10">
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="text-xl font-bold">Lista de contas a pagar</h1>
+    <a href="{% url 'cadastrarDespesa' %}" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+      + Adicionar
+    </a>
+  </div>
+
+  {% if messages %}
+    <div class="mt-4 space-y-2 w-full">
+        {% for message in messages %}
+            <div class="w-full text-center py-2 px-4 rounded-md {{ message.tags }} bg-indigo-100 text-indigo-800">
+                {{ message }}
+            </div>
+        {% endfor %}
+    </div>    
+  {% endif %}
+
+  <table class="w-full table-auto border-collapse">
+    <thead>
+      <tr class="bg-gray-100 text-center">
+        <th class="p-2">Descrição</th>
+        <th class="p-2">Favorecido</th>
+        <th class="p-2">Valor</th>
+        <th class="p-2">Vencimento</th>
+        <th class="p-2">Categoria</th>
+        <th class="p-2" colspan="2">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% if despesas %}
+        {% for despesa in despesas %}
+          <tr class="text-center border-b border-gray-200"> 
+            <td class="p-2">{{ despesa.descricao }}</td> 
+            <td class="p-2">{{ despesa.favorecido }}</td> 
+            <td class="p-2">R$ {{ despesa.valor }}</td> 
+            <td class="p-2">{{ despesa.dataVencimento|date:"j \d\e F \d\e Y" }}</td> 
+            <td class="p-2">{{ despesa.categoria }}</td> 
+            <td class="p-2">
+              <a href="{% url 'editarDespesa' despesa.id %}" class="bg-yellow-400 hover:bg-yellow-500 text-black px-3 py-1 rounded">
+                Editar
+              </a>
+            </td>
+            <td class="p-2">
+              <a href="{% url 'excluirDespesa' despesa.id %}" class="bg-red-400 hover:bg-red-500 text-white px-3 py-1 rounded"
+                 onclick="return confirm('Tem certeza que deseja excluir esta despesa?');">
+                Excluir
+              </a>
+            </td>
+          </tr>
+        {% endfor %}
+      {% else %}
+        <tr>
+          <td colspan="7" class="p-4 text-center text-gray-500">Nenhuma despesa cadastrada.</td>
+        </tr>
+      {% endif %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}

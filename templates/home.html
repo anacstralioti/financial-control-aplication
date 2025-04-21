@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block 'body' %}
+<div class="container mt-5">
+    <h1 class="mt-2 text-sm text-gray-600">Bem-vindo ao Sistema de Controle Financeiro</h1>
+    <p class="mt-2 text-sm text-gray-600">
+        Faça seu
+        <a href="{% url 'register' %}" class="font-semibold text-indigo-600 hover:text-indigo-500">cadastro</a>
+        ou 
+        <a href="{% url 'login' %}" class="font-semibold text-indigo-600 hover:text-indigo-500">login</a>
+        aqui
+      </p>
+</div>
+{% endblock 'body' %} 
