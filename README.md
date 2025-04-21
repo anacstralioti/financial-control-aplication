@@ -62,7 +62,7 @@
 
 ## 5. Organização das Entregas por Sprint    
     
-### Sprint 1    
+### Sprint 1 - 25/04
 
 - Cadastrar usuário
 - Login usuário
