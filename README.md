@@ -17,7 +17,11 @@
 - *Login usuário:* Como um usuário cadastrado, quero fazer login no sistema para visualizar e gerenciar minhas finanças pessoais;
 - *Criptografar dados:* Como um usuário, quero que meus dados sejam criptografados para garantir a privacidade das minhas informações;
 - *Cadastrar contas a pagar:* Como um usuário, quero cadastrar contas a pagar para organizar minhas obrigações financeiras;
+- *Editar contas a pagar:* Como um usuário, quero editar contas a pagar para garantir integridade de minhas obrigações financeiras;
+- *Excluir contas a pagar:* Como usuário, quero excluir contas a pagar para garantir que já realizei minhas obrigações quanto àquele gasto;
 - *Cadastrar contas a receber:* Como um usuário, quero cadastrar contas a receber para planejar meu fluxo de receitas;
+- *Editar contas a receber:* Como um usuário, quero editar contas a receber para garantir integridade de minhas obrigações financeiras;
+- *Excluir contas a receber:* Como usuário, quero excluir contas a receber para garantir que já realizei minhas obrigações quanto àquela receita;
 - *Controlar vencimentos:* Como um usuário, quero associar datas de vencimento as contas para evitar esquecimentos e atrasos;
 - *Cadastrar favorecidos:* Como um usuário, quero cadastrar favorecidos para facilitar o registro de transações recorrentes;
 - *Vincular favorecidos:* Como um usuário, quero vincular favorecidos às contas a pagar/receber para manter um controle detalhado das minhas transações;
@@ -36,7 +40,11 @@
 | Login usuário                               | Must       |
 | Criptografar dados                          | Must       |
 | Cadastrar contas a pagar                    | Must       |
+| Editar contas a pagar                       | Must       |
+| Excluir contas a pagar                      | Must       |
 | Cadastrar contas a receber                  | Must       |
+| Editar contas a receber                     | Must       |
+| Excluir contas a receber                    | Must       |
 | Controlar vencimentos                       | Must       |
 | Cadastrar favorecidos                       | Must       |
 | Vincular favorecidos                        | Must       |
@@ -53,7 +61,11 @@
 - Login usuário
 - Criptografar dados
 - Cadastrar contas a pagar
+- Editar contas a pagar
+- Excluir contas a pagar
 - Cadastrar contas a receber
+- Editar contas a receber
+- Excluir contas a receber
 - Cadastrar favorecidos
 - Vincular favorecidos
 - Categorizar contas
@@ -67,10 +79,14 @@
 - Cadastrar usuário
 - Login usuário
 - Cadastrar contas a pagar   
-
+- Editar contas a pagar
+- Excluir contas a pagar
+  
 ### Sprint 2    
 
 - Cadastrar contas a receber
+- Editar contas a receber
+- Excluir contas a receber
 - Cadastrar favorecidos 
 
 ### Sprint 3    
